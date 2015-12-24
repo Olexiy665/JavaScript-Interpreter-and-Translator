@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+
+<div>
+    <p><textarea id="entry-string" rows="10" cols="50" name="text" value="if(1>3)console.log(1)else console.log(2)"></textarea></p>
+    <p><input  type="submit" value="run!" onclick="main()"></p>
+
+    <p id="info">Compilation info: </p>
+     <div id="console-emulator"></div>
+    <h2>Вивід псевдокоду</h2>
+    <div id="result"></div>
+
+</div>
+<script src = 'bower_components/esprima/esprima.js'></script>
+<script src="json-tree.js"></script>
+<script src="main.js"></script>
+<style>
+    pre {
+        -o-tab-size: 30%;
+        -moz-tab-size: 30;
+        tab-size:30;
+    }
+    li {
+        color: #3F51B5;
+    }
+    span {
+        color: #E65100;
+    }
+    pre {
+        left: 5%;
+        position: relative;}
+    .Error{
+        color:red;
+    }
+    #console-emulator {
+        width: 640px;
+        height: auto;
+        background-color: rgba(20, 36, 43, 0.96);
+        color: white;
+    }
+</style>
+
+
+<script>
+    //document.getElementById('entry-string').textContent = testString;
+
+
+</script>
+</body>
+</html>
